@@ -13,16 +13,17 @@
 - Member 2: [Name] - [College]
 
 ### Hosted Project Link
-[mention your project hosted link here]
+[Backend (Render)](https://safezone-backend.onrender.com)<!-- Replace with actual link after deployment -->
+[Frontend (Vercel/Netlify)](https://safezone-frontend.vercel.app)<!-- Replace with actual link after deployment -->
 
 ### Project Description
-[2-3 lines about what your project does]
+SafeZone is a lightweight safety application designed to provide immediate SOS alerts. With a single tap, it fetches your live location, notifies emergency contacts via SMS and WhatsApp, and provides shortcuts to nearby safe spots like police stations and hospitals.
 
 ### The Problem statement
-[What problem are you solving?]
+Personal safety is a major concern, especially when alone or in unfamiliar areas. Traditional methods of seeking help (making a call) can be slow or impossible in high-stress situations.
 
 ### The Solution
-[How are you solving it?]
+SafeZone simplifies emergency signaling by automating location sharing and multi-channel alerting (SMS, WhatsApp, Manual Fallback) through a simple, high-visibility interface.
 
 ---
 
@@ -31,10 +32,10 @@
 ### Technologies/Components Used
 
 **For Software:**
-- Languages used: [e.g., JavaScript, Python, Java]
-- Frameworks used: [e.g., React, Django, Spring Boot]
-- Libraries used: [e.g., axios, pandas, JUnit]
-- Tools used: [e.g., VS Code, Git, Docker]
+- Languages used: JavaScript (ES6+), HTML5, CSS3
+- Frameworks used: Express.js (Backend)
+- Libraries used: Leaflet.js (Maps), Axios, CORS, Dotenv
+- Tools used: VS Code, Git, Render (Hosting), Vercel (Hosting)
 
 **For Hardware:**
 - Main components: [List main components]
@@ -59,12 +60,22 @@ List the key features of your project:
 
 #### Installation
 ```bash
-[Installation commands - e.g., npm install, pip install -r requirements.txt]
+# Backend
+cd backend
+npm install
+
+# Frontend
+# No installation needed for vanilla HTML/CSS/JS
 ```
 
 #### Run
 ```bash
-[Run commands - e.g., npm start, python app.py]
+# Backend
+cd backend
+npm start
+
+# Frontend
+# Open frontend/index.html in a browser or use a Live Server
 ```
 
 ### For Hardware:
@@ -137,37 +148,29 @@ List the key features of your project:
 
 #### API Documentation
 
-**Base URL:** `https://api.yourproject.com`
+**Base URL:** `https://your-backend-url.onrender.com`
 
 ##### Endpoints
 
-**GET /api/endpoint**
-- **Description:** [What it does]
-- **Parameters:**
-  - `param1` (string): [Description]
-  - `param2` (integer): [Description]
-- **Response:**
-```json
-{
-  "status": "success",
-  "data": {}
-}
-```
-
-**POST /api/endpoint**
-- **Description:** [What it does]
+**POST /send-sos**
+- **Description:** Receives emergency details and triggers SOS alerting.
 - **Request Body:**
 ```json
 {
-  "field1": "value1",
-  "field2": "value2"
+  "name": "Jane Doe",
+  "emergencyContact": "+919876543210",
+  "location": "Lat: 12.345, Lng: 67.890"
 }
 ```
 - **Response:**
 ```json
 {
-  "status": "success",
-  "message": "Operation completed"
+  "success": true,
+  "message": "SOS Alert sent successfully to emergency contact.",
+  "details": {
+    "contact": "+919876543210",
+    "timestamp": "2024-02-21T10:00:00Z"
+  }
 }
 ```
 
@@ -374,17 +377,17 @@ python script.py -v --format json data.json
 
 If you used AI tools during development, document them here for transparency:
 
-**Tool Used:** [e.g., GitHub Copilot, v0.dev, Cursor, ChatGPT, Claude]
+**Tool Used:** Antigravity (Advanced Agentic Coding AI)
 
-**Purpose:** [What you used it for]
-- Example: "Generated boilerplate React components"
-- Example: "Debugging assistance for async functions"
-- Example: "Code review and optimization suggestions"
+**Purpose:** 
+- Architecture design and frontend-backend integration.
+- Implementing SOS fallback mechanisms (SMS/WhatsApp).
+- Deployment preparation and documentation.
 
 **Key Prompts Used:**
-- "Create a REST API endpoint for user authentication"
-- "Debug this async function that's causing race conditions"
-- "Optimize this database query for better performance"
+- "Connecting Frontend and Backend"
+- "Implementing SOS Fallback"
+- "Prepare the complete deployment"
 
 **Percentage of AI-generated code:** [Approximately X%]
 

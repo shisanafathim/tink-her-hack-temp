@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SafeZone Lite</title>
+    <link rel="stylesheet" href="style.css">
+
+    <!-- Leaflet CSS for live map -->
+    <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css" />
+</head>
+
+<body>
+
+    <header>
+        <h1>🛡 SafeZone Lite</h1>
+        <p>Instant Access to Verified Safe Spaces</p>
+    </header>
+
+    <!-- Live Location Status Bar -->
+    <div id="location-bar" class="location-bar">
+        📍 <span id="location-text">Fetching your location...</span>
+    </div>
+
+    <div class="container">
+
+        <button class="find-btn" onclick="findSafeSpot()">
+            📍 Find Nearest Safe Spot
+        </button>
+
+        <div class="card">
+            <h2>Safe Categories</h2>
+            <ul>
+                <li onclick="searchNearby('police')">👮 Police Stations</li>
+                <li onclick="searchNearby('hospital')">🏥 24/7 Hospitals</li>
+                <li onclick="searchNearby('cafe')">☕ Women-Friendly Cafes</li>
+                <li onclick="searchNearby('pharmacy')">💊 24/7 Pharmacies</li>
+            </ul>
+        </div>
+
+        <div class="card">
+            <h2>🗺 Live Location Map</h2>
+            <div id="map" class="map-box"></div>
+            <p id="coords-display" class="coords-text">Waiting for GPS...</p>
+        </div>
+
+        <div class="card emergency">
+            <h2>Emergency Contacts</h2>
+            <a href="tel:100">📞 Police - 100</a>
+            <a href="tel:181">📞 Women Helpline - 181</a>
+            <a href="tel:1091" class="pink-police">� Pink Police - 1091</a>
+            <a href="tel:102">📞 Ambulance - 102</a>
+        </div>
+
+        <!-- Profile Setup Card -->
+        <div class="card profile-card" id="profile-card">
+            <h2>👤 My Profile</h2>
+            <input type="text" id="user-name" placeholder="Your Name" class="profile-input" />
+            <input type="tel" id="emergency-contact" placeholder="Emergency Contact (e.g. +917012552481)"
+                class="profile-input" />
+            <p class="format-hint">Format: + [Country Code] [Number]</p>
+            <button class="save-btn" onclick="saveProfile()">💾 Save Profile</button>
+            <p id="profile-status" class="profile-status"></p>
+        </div>
+
+        <div class="card free-sos">
+            <h2>📢 Quick SOS (Free)</h2>
+            <div class="free-btn-group">
+                <button class="free-btn sms" onclick="directSMS()">📱 Direct SMS</button>
+                <button class="free-btn wa" onclick="directWhatsApp()">📲 WhatsApp</button>
+                <button class="free-btn call" onclick="directCall()">📞 Call Now</button>
+            </div>
+        </div>
+
+        <button class="sos-btn" onclick="activateSOS()">
+            🚨 TRIGGER SMART SOS
+        </button>
+
+    </div>
+
+    <footer>
+        © 2026 SafeZone Lite | Built for Women Safety Hackathon
+    </footer>
+
+    <!-- Leaflet JS -->
+    <script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"></script>
+    <script src="script.js"></script>
+
+</body>
+
+</html>
