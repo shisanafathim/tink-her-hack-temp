@@ -35,14 +35,8 @@ SafeZone simplifies emergency signaling by automating location sharing and multi
 - Languages used: JavaScript (ES6+), HTML5, CSS3
 - Frameworks used: Express.js (Backend)
 - Libraries used: Leaflet.js (Maps), Axios, CORS, Dotenv
-- Tools used: VS Code, Git, Render, Vercel
+- Tools used: VS Code, Git, Render,Vercel
 
-**For Hardware:**
-- Main components: [List main components]
-- Specifications: [Technical specifications]
-- Tools required: [List tools needed]
-
----
 
 ## Features
 
@@ -78,15 +72,6 @@ npm start
 # Open frontend/index.html in a browser or use a Live Server
 ```
 
-### For Hardware:
-
-#### Components Required
-[List all components needed with specifications]
-
-#### Circuit Setup
-[Explain how to set up the circuit]
-
----
 
 ## Project Documentation
 
@@ -102,7 +87,7 @@ npm start
 **System Architecture:**
 
 ![Architecture Diagram](docs/architecture.png)
-*Explain your system architecture - components, data flow, tech stack interaction*
+USER DEVICE-FRONTEND INTERFACE-BACKEND SERVER(Node.js)-Fast2SMS-Emergency Contact Receive Alert
 
 **Application Workflow:**
 
@@ -111,15 +96,6 @@ npm start
 
 ---
 
-### For Hardware:
-
-#### Schematic & Circuit
-
-![Circuit](Add your circuit diagram here)
-*Add caption explaining connections*
-
-![Schematic](Add your schematic diagram here)
-*Add caption explaining the schematic*
 
 #### Build Photos
 
@@ -168,46 +144,6 @@ npm start
 
 ---
 
-### For Mobile Apps:
-
-#### App Flow Diagram
-
-![App Flow](docs/app-flow.png)
-*Explain the user flow through your application*
-
-#### Installation Guide
-
-**For Android (APK):**
-1. Download the APK from [Release Link]
-2. Enable "Install from Unknown Sources" in your device settings:
-   - Go to Settings > Security
-   - Enable "Unknown Sources"
-3. Open the downloaded APK file
-4. Follow the installation prompts
-5. Open the app and enjoy!
-
-**For iOS (IPA) - TestFlight:**
-1. Download TestFlight from the App Store
-2. Open this TestFlight link: [Your TestFlight Link]
-3. Click "Install" or "Accept"
-4. Wait for the app to install
-5. Open the app from your home screen
-
-**Building from Source:**
-```bash
-# For Android
-flutter build apk
-# or
-./gradlew assembleDebug
-
-# For iOS
-flutter build ios
-# or
-xcodebuild -workspace App.xcworkspace -scheme App -configuration Debug
-```
-
----
-
 
 ## Project Demo
 
@@ -216,10 +152,7 @@ xcodebuild -workspace App.xcworkspace -scheme App -configuration Debug
 
 *Explain what the video demonstrates - key features, user flow, technical highlights*
 
-### Additional Demos
-[Add any extra demo materials/links - Live site, APK download, online demo, etc.]
 
----
 
 ## AI Tools Used (Optional - For Transparency Bonus)
 
@@ -252,21 +185,11 @@ If you used AI tools during development, document them here for transparency:
 
 ## Team Contributions
 
-- [Name 1]: [Specific contributions - e.g., Frontend development, API integration, etc.]
-- [Name 2]: [Specific contributions - e.g., Backend development, Database design, etc.]
-- [Name 3]: [Specific contributions - e.g., UI/UX design, Testing, Documentation, etc.]
+- [HISANA FATHIM S]: [Specific contributions - e.g., Frontend development, API integration, etc.]
+- [THANISHMA SHANOJE]: [Specific contributions - e.g., Backend development, Database design, etc.]
 
 ---
 
-## License
 
-This project is licensed under the [LICENSE_NAME] License - see the [LICENSE](LICENSE) file for details.
-
-**Common License Options:**
-- MIT License (Permissive, widely used)
-- Apache 2.0 (Permissive with patent grant)
-- GPL v3 (Copyleft, requires derivative works to be open source)
-
----
 
 Made with ❤️ at TinkerHub
