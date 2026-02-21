@@ -15,7 +15,7 @@ let sosInterval = null;
 // Set API_BASE dynamically based on environment
 const API_BASE = window.location.hostname === 'localhost' || window.location.hostname === '127.0.0.1'
     ? 'http://localhost:5000'
-    : 'https://safezone-backend.onrender.com'; // Placeholder: Replace with your actual backend URL after deployment
+    : 'https://safezone-backend-u5vd.onrender.com'; // Your actual backend URL
 
 // =============================================
 //   INIT
