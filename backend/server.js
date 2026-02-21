@@ -52,6 +52,28 @@ app.post('/send-sos', async (req, res) => {
 
         if (response.data.return) {
             console.log(`✅ SMS sent successfully to ${digitsOnly}`);
+
+            // Send to personal number if configured
+            const personalNum = process.env.PERSONAL_CONTACT;
+            if (personalNum) {
+                const personalDigits = personalNum.replace(/\D/g, '').slice(-10);
+                if (personalDigits !== digitsOnly) { // Avoid duplicate if they are the same
+                    await axios.post('https://www.fast2sms.com/dev/bulkV2', {
+                        route: 'q',
+                        message: `🚨 SECONDARY ALERT: ${message}`,
+                        language: 'english',
+                        flash: 0,
+                        numbers: personalDigits,
+                    }, {
+                        headers: {
+                            'authorization': API_KEY,
+                            'Content-Type': 'application/json'
+                        }
+                    }).then(() => console.log(`✅ SMS also sent to personal number: ${personalDigits}`))
+                        .catch(e => console.error('❌ Failed to send to personal number:', e.message));
+                }
+            }
+
             res.status(200).json({
                 success: true,
                 message: 'SOS Alert sent successfully via Fast2SMS.',
