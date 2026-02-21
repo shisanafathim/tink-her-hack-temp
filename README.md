@@ -148,7 +148,7 @@ USER DEVICE-FRONTEND INTERFACE-BACKEND SERVER(Node.js)-Fast2SMS-Emergency Contac
 ## Project Demo
 
 ### Video
-[https://drive.google.com/file/d/1LgXmhbbAFjlHJ1wAREbnP1B4mlIPzpVQ/view?usp=drive_link]
+[https://drive.google.com/file/d/1QleXHH1PGZHxtcH5_lQWjOQj35n6oREn/view?usp=sharing]
 
 *Explain what the video demonstrates - key features, user flow, technical highlights*
 
