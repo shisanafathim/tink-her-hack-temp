@@ -9,12 +9,12 @@
 ### Team Name: Evolve
 
 ### Team Members
-- Member 1: [Name] - [College]
-- Member 2: [Name] - [College]
+- Member 1: [HISANA FATHIM S] - [COLLEGE OF ENGINEERING ATTINGAL]
+- Member 2: [THANISHMA SHANOJE] - [COLLEGE OF ENGINEERING ATTINGAL]
 
 ### Hosted Project Link
-[Backend (Render)](https://safezone-backend.onrender.com)
-[Frontend (Vercel)](https://safezone-frontend.vercel.app)
+[Backend (Render)](https://safezone-backend-u5vd.onrender.com/)
+[Frontend (Vercel)](https://evolve-rose.vercel.app/)
 
 ### Project Description
 SafeZone is a lightweight safety application designed to provide immediate SOS alerts. With a single tap, it fetches your live location, notifies emergency contacts via SMS and WhatsApp, and provides shortcuts to nearby safe spots like police stations and hospitals.
@@ -94,14 +94,8 @@ npm start
 
 #### Screenshots (Add at least 3)
 
-![Screenshot1](Add screenshot 1 here with proper name)
-*Add caption explaining what this shows*
-
-![Screenshot2](Add screenshot 2 here with proper name)
-*Add caption explaining what this shows*
-
-![Screenshot3](Add screenshot 3 here with proper name)
-*Add caption explaining what this shows*
+<img src="image.png" alt="SCREENSHOT 1" width="500" height="500">
+<img src="img2.png" alt="SCREENSHOT 2" width="500" height="500">
 
 #### Diagrams
 
